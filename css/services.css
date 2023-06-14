@@ -82,6 +82,9 @@ html, body {
     border: 3px solid #0047ab00;
     
 }
+.card:nth-last-child(1){
+    margin-bottom: 30px;
+}
 .card:hover{
 
     border: 3px solid #497dc7;
@@ -117,4 +120,8 @@ html, body {
 }
 .services-mobile{
     display: none;
+}
+
+.c{
+    opacity: 0;
 }
