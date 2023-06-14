@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(/Deltha/imgs/fundo.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+}
+
+html, body {
+    height: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    position: relative;
+    top: -80px;
+    justify-content: center;
+
+    height: 100%;
+    width: 80%;
+
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+h1, h2, p {
+    font-family: 'Roboto';
+}
+
+main h1 {
+    color: white;
+
+    font-size: 6vw;
+    font-weight: 900;
+}
+
+.spans h2 {
+    margin-right: 20px;
+    display: inline-block;
+    color: white;
+    letter-spacing: 20px;
+    font-size: 1.5vw;
+}
+
+main p {
+    color: white;
+
+    font-size: 1.2vw;
+}
+
+.main-btn {
+    margin-top: 40px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.main-btn a {
+    transition: .6s;
+    border: 3px solid white;
+    border-radius: 5px;
+    padding: 15px 40px;
+}
+
+.main-btn a:hover {
+    transition: .6s;
+    color: #12275a;
+    font-weight: 900;
+    background-color: white;
+}

@@ -1,0 +1,183 @@
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+nav {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80%;
+    height: 80px;
+    color: white;
+    z-index: 999;
+}
+
+nav h1 {
+    font-size: 2.5rem;
+    z-index: 222;
+}
+
+.nav-links a {
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: 550;
+    margin: 0 0 0 20px;
+    padding: 8px 28px;
+    border-radius: 6px;
+    outline: none;
+}
+
+.nav-links .outline::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: white;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: left;
+    border: 30px;
+    transition: .5s;
+}
+
+.nav-links .outline:hover::after {
+    transform: scaleX(1);
+}
+
+.nav-links #nav-btn {
+    border: 2px solid white;
+    padding: 14px 32px;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+
+.nav-links #nav-btn i {
+    position: relative;
+    bottom: -4px;
+    right: 4px;
+    line-height: 100%;
+    font-size: 1.5em;
+}
+
+.nav-links #nav-btn:hover {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 900;
+    transition: 0.5s;
+}
+
+.dashmenu {
+    display: none;
+}
+
+.fas {
+    position: relative;
+    top: 5px;
+    font-size: 1.5em;
+    margin-right: 7px;
+}
+
+.fa {
+    font-size: 1.5em;
+    margin-right: 7px;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-links #nav-btn i {
+        font-size: 1.8em;
+    }
+
+    .nav-links a {
+        position: relative;
+        font-size: 1rem;
+        font-weight: 550;
+        padding: 8px 10px;
+        border-radius: 6px;
+        outline: none;
+        margin: 0;
+    }
+
+    .nav-links #nav-btn {
+        border: 2px solid white;
+        padding: 14px 26px;
+        border-radius: 6px;
+        transition: 0.5s;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        max-width: none;
+    }
+
+    nav h1,
+    .dashmenu {
+        padding: 0 20px;
+    }
+
+    nav h1 {
+        font-size: 2rem;
+        z-index: 222;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 80px 0 30px 0;
+        width: 100%;
+        z-index: 200;
+        transition: .5s;
+        background-color: rgba(255, 255, 255, .2);
+        backdrop-filter: blur(4px);
+    }
+
+    .nav-links #nav-btn {
+        border: none;
+    }
+
+    .nav-links a {
+        margin: 0;
+    }
+
+    .outline {
+        display: block;
+    }
+
+    .btn {
+        display: block;
+    }
+
+    .dashmenu {
+        position: absolute;
+        display: inline-block;
+        font-size: 1.5em;
+        right: 0;
+        z-index: 899;
+    }
+
+    .escondido {
+        top: -300px;
+        transition: .5s;
+    }
+
+    .nav-links .outline:hover::after {
+        transform: scaleX(0);
+    }
+
+    .nav-links #nav-btn:hover {
+        background-color: rgba(255, 255, 255, 0);
+        color: white;
+        font-weight: 100;
+    }
+
+}
